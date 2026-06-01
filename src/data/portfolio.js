@@ -120,13 +120,6 @@ export const portfolioProfile = {
     phone: personalInfo.phone,
     availability: "Available for learning, collaboration, and entry-level data opportunities.",
     location: personalInfo.location,
-    form: {
-      namePlaceholder: "Your name",
-      emailPlaceholder: "Your email",
-      subjectPlaceholder: "Message subject",
-      messagePlaceholder: "Tell me about your idea, question, or opportunity...",
-      submitLabel: "Send Message",
-    },
     footer: {
       note: "Built with React, Vite, Tailwind CSS, and a focus on clear digital presentation.",
       copyright: "Meckson Christopher. All rights reserved.",

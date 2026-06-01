@@ -1,6 +1,6 @@
 import { motion } from "framer-motion";
 import { ArrowRight } from "lucide-react";
-import profileImage from "../assets/roby-profile-image-optimized.jpg";
+import profileImage from "../assets/meckson-profile-image.jpg";
 import SectionShell from "../components/layout/SectionShell";
 import { portfolioProfile } from "../data/portfolio";
 
