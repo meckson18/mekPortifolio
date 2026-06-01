@@ -44,7 +44,7 @@ export default async function handler(req, res) {
   try {
     await resend.emails.send({
       from: process.env.RESEND_FROM_EMAIL || 'onboarding@resend.dev',
-      to: process.env.RESEND_TO_EMAIL || 'robertmwakamela2045@gmail.com',
+      to: process.env.RESEND_TO_EMAIL || 'cmeckson38@gmail.com',
       subject: emailSubject,
       html,
     });

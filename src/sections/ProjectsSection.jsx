@@ -9,6 +9,7 @@ function ProjectsSection() {
   const { projects } = portfolioProfile;
   const [selectedProject, setSelectedProject] = useState(null);
   const [isModalOpen, setIsModalOpen] = useState(false);
+  const hasProjects = projects.items.length > 0;
 
   const handleProjectClick = (project) => {
     const isCompleted = project.status === "completed";
@@ -50,7 +51,8 @@ function ProjectsSection() {
       </motion.div>
 
       {/* Projects Grid */}
-      <div className="grid gap-6 lg:grid-cols-2 lg:gap-8">
+      {hasProjects ? (
+        <div className="grid gap-6 lg:grid-cols-2 lg:gap-8">
         {projects.items.map((project, index) => {
           const isCompleted = project.status === "completed";
           const isOngoing = project.status === "ongoing";
@@ -67,10 +69,10 @@ function ProjectsSection() {
                 delay: index * 0.1,
               }}
               onClick={() => handleProjectClick(project)}
-              className={isClickable || isInProgress ? "cursor-pointer" : ""}
+              className={isClickable ? "cursor-pointer" : ""}
             >
               <motion.article
-                whileHover={isClickable || isInProgress ? { y: -8 } : {}}
+                whileHover={isClickable ? { y: -8 } : {}}
                 transition={{ duration: 0.3 }}
                 className="card-premium group overflow-hidden h-full flex flex-col"
               >
@@ -160,7 +162,23 @@ function ProjectsSection() {
             </motion.div>
           );
         })}
-      </div>
+        </div>
+      ) : (
+        <motion.div
+          initial={{ opacity: 0, y: 20 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true, amount: 0.3 }}
+          transition={{ duration: 0.6 }}
+          className="card-premium mx-auto max-w-2xl p-8 text-center"
+        >
+          <p className="text-lg font-bold text-brand-secondary">
+            {projects.emptyLabel}
+          </p>
+          <p className="mt-3 text-sm leading-relaxed text-brand-muted">
+            {projects.emptyText}
+          </p>
+        </motion.div>
+      )}
 
       {/* Project Modal */}
       <ProjectModal

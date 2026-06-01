@@ -1,175 +1,113 @@
+export const personalInfo = {
+  name: "Meckson Christopher",
+  firstName: "Meckson",
+  title: "Data Scientist",
+  email: "cmeckson38@gmail.com",
+  phone: ["+255778526487"],
+  location: "Dar es Salaam",
+  githubUrl: "https://github.com/meckson18",
+  linkedinUrl: "",
+  whatsappUrl: "https://wa.me/255679526487",
+};
+
 export const portfolioProfile = {
-  name: "Robert Mwakamela",
-  title: "Data Scientist &  Developer ",
+  ...personalInfo,
   intro:
-    "Building AI-powered systems, intelligent dashboards, and scalable web applications.",
+    "Exploring data, analytics, and machine learning to turn information into useful insight.",
   hero: {
-    badge: "Designing intelligent digital products powered by data",
+    badge: "Data science, analytics, and insight-driven problem solving",
+    
     cta: {
       projectsLabel: "Explore Work",
       githubLabel: "GitHub",
     },
     panel: {
-      eyebrow: "Premium Profile",
-      heading: "Building products where intelligence meets usability",
-      availabilityLabel: "Available for impactful work",
-      availabilityText: "AI products, dashboards, automation, and modern web experiences",
+      eyebrow: "Personal Profile",
+      heading: "Learning, analyzing, and building with data",
+      availabilityLabel: "Available for learning and collaboration",
+      availabilityText: "Data analysis, dashboards, machine learning, and research support",
     },
   },
   about: {
     eyebrow: "About Me",
-    heading: "Turning data, intelligence, and engineering into products people can rely on.",
+    heading: "Turning raw data into clear, practical understanding.",
     profileCard: {
-      eyebrow: "Professional Profile",
+      eyebrow: "Personal Profile",
     },
     biography: [
-      "I build AI-powered systems, intelligent dashboards, and scalable web applications designed to solve practical problems.",
-      "My work combines data science, backend engineering, and modern frontend development — moving from data exploration and model development to production-ready digital experiences.",
+      "I am a data scientist focused on using data analysis, visualization, and machine learning to understand real-world problems.",
+      "My work is currently centered on building strong foundations in statistics, Python, SQL, dashboards, and practical machine learning workflows.",
     ],
     highlights: [
-      "AI-powered product thinking",
-      "Modern dashboard and analytics design",
-      "Backend-to-frontend implementation",
+      "Data analysis and visualization",
+      "Machine learning fundamentals",
+      "Insight-focused reporting",
     ],
     stats: [
       {
-        label: "Projects Built",
-        value: "12+",
-        detail: "AI, analytics, and full-stack solutions",
+        label: "Current Focus",
+        value: "Data Science",
+        detail: "Analytics, statistics, and machine learning",
       },
       {
-        label: "Core Focus",
-        value: "Data + UX",
-        detail: "Balancing intelligence with usability",
+        label: "Core Tools",
+        value: "Python / SQL",
+        detail: "Working with data from analysis to insight",
       },
       {
-        label: "Preferred Stack",
-        value: "React / Python",
-        detail: "Fast iteration with scalable architecture",
+        label: "Learning Path",
+        value: "ML + BI",
+        detail: "Models, dashboards, and reporting",
       },
       {
-        label: "Delivery Style",
-        value: "End-to-End",
-        detail: "From research and APIs to interfaces",
+        label: "Portfolio",
+        value: "Growing",
+        detail: "Projects will be added as they are completed",
       },
     ],
   },
   skills: {
-  eyebrow: "Core Expertise",
-  categories: [
-    {
-      title: "AI & Machine Learning",
-      items: [
-        "AI-powered Systems",
-        "Machine Learning",
-        "Intelligent Dashboards",
-      ],
-    },
-    {
-      title: "Full Stack Engineering",
-      items: [
-        "React",
-        "FastAPI",
-        "Node.js",
-        "REST APIs",
-      ],
-    },
-    {
-      title: "Languages",
-      items: [
-        "Python",
-        "JavaScript",
-        "SQL",
-      ],
-    },
-    {
-      title: "Cloud & Deployment",
-      items: [
-        "Docker",
-        "Render",
-        "MongoDB Atlas",
-      ],
-    },
-    {
-      title: "Workflow Tools",
-      items: [
-        "Git",
-        "GitHub",
-        "Microsoft Office",
-      ],
-    },
-  ],
-},
-    
-  projects: {
-    eyebrow: "Projects",
-    heading: "Selected work across AI systems, analytics, and full-stack product development.",
-    description:"A snapshot of projects where I combined engineering, data, and user-focused design to solve real problems with measurable impact.",
-    items: [
+    eyebrow: "Core Skills",
+    heading: "Data science skills built around analysis, modeling, and communication.",
+    description:
+      "A focused skill set for working with data, finding patterns, and presenting insights clearly.",
+    categories: [
       {
-        title: "SWM Platform",
-        status: "completed",
-        shortDescription:
-          "Smart wedding matchmaker platform for vendors and customers.",
-        image: "/projects/swm-preview.png",
-        technologies: ["React", "MongoDB"],
-        liveUrl: "https://swm-delta.vercel.app/"
+        title: "Data Analysis",
+        items: ["Data Cleaning", "Exploratory Data Analysis", "Data Interpretation"],
       },
       {
-        title: "Monster Shark Catch Fishing Game",
-        status: "completed",
-        shortDescription:
-          "Engaging fishing game with AI-powered challenges.",
-        image: "/projects/monster-shark-game.png",
-        technologies: ["python", "javaScript"],
-        liveUrl: "https://robertds-45.github.io/Monster-Shark/"
+        title: "Machine Learning",
+        items: ["Supervised Learning", "Model Evaluation", "Predictive Analytics"],
       },
       {
-        title: "AI Fraud Detection System",
-        status: "ongoing",
-        shortDescription:
-          "Real-time fraud monitoring powered by explainable AI.",
-        image: "/projects/fraud-system.png",
-        technologies: ["Python", "FastAPI", "XGBoost"],
-        progress: [
-          "✔ Fraud detection model completed",
-          "✔ Dashboard architecture designed",
-          "⏳ Explainable AI integration",
-          "⏳ Deployment pipeline"
-        ],
-        expectedRelease: "August 2026",
+        title: "Languages",
+        items: ["Python", "SQL", "JavaScript Basics"],
       },
       {
-        title: "NECTA Educational Analysis",
-        status: "completed",
-        shortDescription:
-          "Educational analytics platform for regional performance insights.",
-        image: "/projects/necta-analysis.png",
-        technologies: ["Python", "SQL", "Analytics"],
-        liveUrl: "https://your-necta-site.vercel.app",
+        title: "Visualization",
+        items: ["Dashboards", "Charts", "Insight Reports"],
       },
       {
-        title: "Leisure Booking Platform",
-        status: "ongoing",
-        shortDescription:
-          "Modern booking and promotions management platform.",
-        image: "/projects/leisure-platform.png",
-        technologies: ["Yii2", "MySQL", "JavaScript"],
-        progress: [
-          "✔ Booking flow completed",
-          "✔ Admin dashboard implemented",
-          "⏳ UI redesign",
-          "⏳ Payment integration"
-        ],
-        expectedRelease: "September 2026",
+        title: "Workflow Tools",
+        items: ["Git", "GitHub", "Microsoft Office"],
       },
     ],
   },
+  projects: {
+    eyebrow: "Projects",
+    heading: "Projects will be added soon.",
+    description:
+      "Meckson is currently preparing portfolio projects. This section is ready for future data science, analytics, and machine learning work.",
+    emptyLabel: "No projects added yet",
+    emptyText: "New work can be added here when it is ready to share.",
+    items: [],
+  },
   contact: {
     eyebrow: "Contact",
-    heading: "Let's build something intelligent, useful, and beautifully executed.",
+    heading: "Let's connect about data, learning, and useful ideas.",
     description:
-      "If you're looking for a data scientist, AI engineer, or full-stack developer to help shape a product or analytics experience, I'd be glad to connect.",
+      "If you would like to connect with Meckson about data science, analytics, or collaboration opportunities, use the contact details below.",
     panel: {
       eyebrow: "Get In Touch",
       socialLabel: "Social Media",
@@ -178,46 +116,38 @@ export const portfolioProfile = {
       availabilityLabel: "Availability",
       locationLabel: "Location",
     },
-    email: "robertmwakamela2045@gmail.com",
-    phone: ["+255755644875", "+255652968815"],
-    availability: "Available for freelance, contract, and collaboration opportunities.",
-    location: "Dar es Salaam, Tanzania",
+    email: personalInfo.email,
+    phone: personalInfo.phone,
+    availability: "Available for learning, collaboration, and entry-level data opportunities.",
+    location: personalInfo.location,
     form: {
       namePlaceholder: "Your name",
       emailPlaceholder: "Your email",
-      subjectPlaceholder: "Project subject",
-      messagePlaceholder: "Tell me about your project, idea, or opportunity...",
+      subjectPlaceholder: "Message subject",
+      messagePlaceholder: "Tell me about your idea, question, or opportunity...",
       submitLabel: "Send Message",
     },
     footer: {
-      note: "Built with React, Vite, Tailwind CSS, and a passion for elegant digital products.",
-      copyright: "Robert Mwakamela. All rights reserved.",
+      note: "Built with React, Vite, Tailwind CSS, and a focus on clear digital presentation.",
+      copyright: "Meckson Christopher. All rights reserved.",
       backToTopLabel: "Back to top",
     },
   },
-  focusAreas: [
-  "AI Systems",
-  "Analytics Dashboards",
-  "Full-Stack Applications",
-],
+  focusAreas: ["Data Analysis", "Machine Learning", "Dashboards"],
   stats: [
-   { label: "Workflow", value: "Design to Deployment" },
-    { label: "Stack", value: "React, FastAPI, Python" },
-    { label: "Workflow", value: "Build, Analyze, Scale" },
+    { label: "Focus", value: "Data Science" },
+    { label: "Tools", value: "Python, SQL, BI" },
+    { label: "Goal", value: "Analyze, Learn, Explain" },
   ],
   socialLinks: [
     {
       label: "GitHub",
-      href: "https://github.com/RobertDS-45",
+      href: personalInfo.githubUrl,
     },
     {
-      label: "LinkedIn",
-      href: "https://www.linkedin.com/in/robert-mwakamela-ds",
+      label: "WhatsApp",
+      href: personalInfo.whatsappUrl,
     },
-    {
-      label:"whatsapp",
-      href: "https://wa.me/255755644875",
-    }
   ],
   cta: {
     projectsHref: "#projects",

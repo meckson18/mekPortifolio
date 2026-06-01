@@ -1,5 +1,6 @@
 import { motion } from "framer-motion";
 import { ArrowRight } from "lucide-react";
+import profileImage from "../assets/roby-profile-image-optimized.jpg";
 import SectionShell from "../components/layout/SectionShell";
 import { portfolioProfile } from "../data/portfolio";
 
@@ -48,7 +49,22 @@ function HeroSection() {
         animate="visible"
         className="relative z-10 w-full"
       >
-        <div className="flex flex-col items-center justify-center text-center max-w-4xl mx-auto">
+        <div className="grid items-center gap-12 lg:grid-cols-[0.9fr_1.1fr] lg:text-left">
+          {/* Profile Image */}
+          <motion.div
+            variants={itemVariants}
+            className="order-1 mx-auto w-full max-w-sm lg:max-w-md"
+          >
+            <div className="card-premium overflow-hidden p-0">
+              <img
+                src={profileImage}
+                alt={`${name} profile portrait`}
+                className="aspect-square h-auto w-full object-cover"
+              />
+            </div>
+          </motion.div>
+
+          <div className="order-2 flex flex-col items-center text-center lg:items-start lg:text-left">
           {/* Badge */}
           <motion.div variants={itemVariants} className="mb-8">
             <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full border border-brand-border bg-white/50 backdrop-blur-sm">
@@ -81,7 +97,7 @@ function HeroSection() {
           </motion.p>
 
           {/* Focus Areas */}
-          <motion.div variants={itemVariants} className="flex flex-wrap gap-3 justify-center mb-10">
+          <motion.div variants={itemVariants} className="flex flex-wrap gap-3 justify-center lg:justify-start mb-10">
             {focusAreas.map((item) => (
               <div
                 key={item}
@@ -93,7 +109,7 @@ function HeroSection() {
           </motion.div>
 
           {/* CTA Buttons */}
-          <motion.div variants={itemVariants} className="flex flex-col sm:flex-row gap-4 items-center justify-center">
+          <motion.div variants={itemVariants} className="flex flex-col sm:flex-row gap-4 items-center justify-center lg:justify-start">
             <a
               href="#projects"
               className="btn-primary"
@@ -108,6 +124,7 @@ function HeroSection() {
               Get in Touch
             </a>
           </motion.div>
+          </div>
         </div>
       </motion.div>
     </SectionShell>

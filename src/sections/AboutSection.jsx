@@ -1,34 +1,16 @@
 import { motion } from "framer-motion";
-import { BadgeCheck, DatabaseZap, ScanSearch, Sparkles } from "lucide-react";
-import profileImage from "../assets/roby-profile-image-optimized.jpg";
+import { DatabaseZap, ScanSearch, Sparkles } from "lucide-react";
 import SectionShell from "../components/layout/SectionShell";
 import { portfolioProfile } from "../data/portfolio";
 
 const highlightIcons = [Sparkles, ScanSearch, DatabaseZap];
 
 function AboutSection() {
-  const { about, name } = portfolioProfile;
+  const { about } = portfolioProfile;
 
   return (
     <SectionShell id="about" className="relative py-16 sm:py-20">
-      <div className="grid gap-10 lg:grid-cols-2 lg:items-center lg:gap-14">
-        {/* Image Column */}
-        <motion.div
-          initial={{ opacity: 0, x: -20 }}
-          whileInView={{ opacity: 1, x: 0 }}
-          viewport={{ once: true, amount: 0.3 }}
-          transition={{ duration: 0.7 }}
-          className="relative"
-        >
-          <div className="card-premium overflow-hidden p-0">
-            <img
-              src={profileImage}
-              alt={`${name} profile portrait`}
-              className="w-full h-auto object-cover aspect-square"
-            />
-          </div>
-        </motion.div>
-
+      <div className="mx-auto max-w-5xl">
         {/* Content Column */}
         <div className="space-y-8">
           <motion.div

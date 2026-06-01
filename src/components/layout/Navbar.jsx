@@ -1,6 +1,7 @@
 import { useState } from "react";
 import { motion } from "framer-motion";
 import { Menu, X } from "lucide-react";
+import { personalInfo } from "../../data/portfolio";
 
 function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
@@ -24,7 +25,7 @@ function Navbar() {
           <div className="flex items-center justify-between px-4 py-3.5 sm:px-8">
             {/* Logo */}
             <a href="#hero" className="mr-8 font-bold text-brand-secondary text-lg">
-              Robert
+              {personalInfo.firstName}
             </a>
 
             {/* Desktop Menu */}
